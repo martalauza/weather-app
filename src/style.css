@@ -1,0 +1,74 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: block;
+  margin: 70px auto;
+  max-width: 600px;
+  max-height: 400px;
+}
+.containerall {
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+.city {
+  font-size: 25px;
+  padding: 10px 20px;
+  color: rgb(0, 112, 100);
+}
+.todays-temperature {
+  color: rgb(0, 112, 100);
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+p {
+  font-size: 19px;
+  text-align: right;
+  padding: 0 auto;
+  margin: 5px 40px 20px;
+}
+img {
+  margin: 50px 130px 10px 10px;
+  padding: 0 auto;
+  display: block;
+  float: right;
+  filter: drop-shadow(30px 10px 4px #abd6d1);
+}
+.forecast {
+  font-size: larger;
+  text-align: center;
+  margin: 0 10px 15px 15px;
+  display: block;
+}
+.card {
+  background-color: #d3edeb;
+  border-color: rgb(0, 112, 100);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.row {
+  margin: 0;
+  padding: 0;
+}
+.rowtop {
+  padding: 20px;
+}
+.form-control {
+  margin: 5px;
+  padding: 8px;
+}
+
+ul {
+  margin: 20px 10px 10px 20px;
+  padding: 0;
+}
+
+li {
+  color: #757f7d;
+  font-size: 18px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
