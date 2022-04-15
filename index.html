@@ -10,88 +10,71 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container">
-      <div class="card">
-        <div class="card-body">
-          <div class="city"></div>
-          <h1 id ="city"></h1>
-          <span class="temperature" id ="temperature">
-          </span>
-            <span class = "units">°C</span> 
-            </div>
-            <div class="col-6">
-                <ul>
-                  <li>Humidity: <span id="humidity"></span>%</li>
-                  <li>Wind: <span id="wind"></span> km/h</li>
-                </ul>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  id="city-input"
+                  placeholder="Enter a city"
+                  class="form-control shadow sm"
+                  autofocus-on
+                />
               </div>
-            <img src="src/partlycloudy.jpg"style="max-width:20%; height:auto">
-            <br />
-              <div class="rowtop">
-                <div class="col">
-                  <form class = "search-form" id = "search-form">
-                    <div class="row">
-                      <div class="col-12">
-                  <input type="search" id = "city-input" placeholder="Enter a city" class="form-control shadow sm" autofocus-on/>
-                 </div> 
-              <div class="col-6">
-                  <input type="submit" value="Search" class="form-control btn btn-warning shadow-sm w-100 "/>
-              </div>
-              <div class = "col-6">
-                <button class ="btn btn-success w-100" id = "current-location-button">
-                Current
-                </button>
-              </div>
-              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-warning shadow-sm w-100"
+                />
               </div>
             </div>
-            </form>
-            <br />
-            <p>Saturday 12th June 2022 12:22</p>
-            <span class="forecast"> 5 day weather forecast</span>
-            <div class="containerall">
-              <div class="row">
-                <div class="col-2 Sunday">Sun</div>
-                <div class="col-2 Monday">Mon</div>
-                <div class="col-2 Tuesday">Tue</div>
-                <div class="col-2 Wednesday">Wed</div>
-                <div class="col-2 Thursday">Thu</div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
+            <ul>
+              <li id="date"></li>
+              <li id="description"></li>
+            </ul>
+          </div>
 
-                <div class="row">
-                  <div class="col-2 SunnyCloudy">⛅️</div>
-                  <div class="col-2 Rainy">🌧</div>
-                  <div class="col-2 Windy">🌬</div>
-                  <div class="col-2 Sunny">☀️</div>
-                  <div class="col-2 Cloudy">☁️</div>
-
-                  <div class="row">
-                    <div class="col-2 SunTemp">15°C</div>
-                    <div class="col-2 MonTemp">10°C</div>
-                    <div class="col-2 TueTemp">12°C</div>
-                    <div class="col-2 WedTemp">11°C</div>
-                    <div class="col-2 ThuTemp">9°C</div>
-
-                    <div class="row">
-                      <div class="col-2 descriptionS">Cloudy</div>
-                      <div class="col-2 descriptionM">Rainy</div>
-                      <div class="col-2 descriptionT">Windy</div>
-                      <div class="col-2 descriptionW">Sunny</div>
-                      <div class="col-2 descriptionTh">Cloudy</div>
-                    </div>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="clearfix weather-tempereture">
+                <img
+                  src=""
+                  id="icon"
+                />
+                <strong id="temperature"></strong>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
               </div>
+            </div>
+
+            <div class="col-md-6">
+              <ul class="parameters">
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
             </div>
           </div>
+         </div>
         </div>
-         <small><a href="https://github.com/martalauza/weather-app" target="_blank">Open-source code</a>, by Marta Lauza</small>
-      </div>
-    </div>
+  <small>
+          <a href="https://github.com/martalauza/weather-app" target="_blank"
+            >Open-source code</a>
+            , by Marta Lauza
+          </small>
     <script src="src/app.js"></script>
   </body>
 </html>
