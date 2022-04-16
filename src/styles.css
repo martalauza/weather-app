@@ -12,6 +12,13 @@
 .overview {
   margin-bottom: 15px;
 }
+.weather-temperature.active {
+  color: black;
+  cursor: default;
+}
+.weather-temperature.active:hover {
+  text-decoration: none;
+}
 ul {
   padding: 0;
   margin: 0;
