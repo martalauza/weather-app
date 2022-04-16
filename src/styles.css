@@ -1,30 +1,35 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #e4dee2;
+}
+.container {
+  margin-top: 70px;
 }
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
 }
 .weather-app {
-  padding: 20px;
+  padding: 25px;
   border-radius: 5px;
   border: 1px solid grey;
-  background-color: #d3edeb;
-  border-color: rgb(0, 112, 100);
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    125deg,
+    rgba(238, 174, 202, 0.8696741854636592) 11%,
+    rgba(245, 76, 213, 0.368421052631579) 76%
+  );
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .overview {
   margin-bottom: 15px;
 }
-.weather-temperature img {
-  margin-right: 6px;
-  height: 64px;
-  width: 70px;
-}
-.weather-temperature strong {
-  position: relative;
-  font-size: 48px;
-  font-weight: 400;
-  top: 12px;
+
+.weather-icon img {
+  margin-top: -40px;
+  margin-left: -20px;
+  height: 100px;
+  width: 100px;
 }
 .weather-temperature .units {
   position: relative;
@@ -32,12 +37,49 @@ body {
   top: -10px;
 }
 
-.weather-temperature.active {
+.parameters {
+  position: relative;
+  top: 25px;
+  right: 3px;
+}
+
+.weather-temperature strong {
+  position: relative;
+  font-size: 48px;
+  font-weight: 400;
+  top: 9px;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -10px;
+}
+
+.weather-temperature .active {
   color: black;
   cursor: default;
-}
-.weather-temperature.active:hover {
   text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+.btn-primary,
+button {
+  background-color: #aca7aa;
+  color: white;
+  transition: all 200ms ease-in-out;
+  border-radius: 5px;
+  border: 1px solid #757f7d;
+}
+.btn-primary:hover,
+button:hover {
+  background-color: #757f7d;
+  border: none;
+  cursor: pointer;
+}
+h1 {
+  color: black;
+  line-height: 28px;
 }
 ul {
   padding: 0;
@@ -45,10 +87,10 @@ ul {
 }
 li {
   color: #757f7d;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 100;
-  height: 19px;
-  line-height: 1;
+  height: 21px;
+  line-height: 2;
   list-style: none;
 }
 li:first-letter {
@@ -59,7 +101,7 @@ small {
   padding: 0;
   text-align: center;
 }
-h1 {
-  color: #4a847f;
-  line-height: 28px;
+a.author {
+  text-decoration: none;
+  color: #e590cf;
 }
