@@ -1,17 +1,37 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
-  background-color: #d3edeb;
-  border-color: rgb(0, 112, 100);
 }
 .weather-app {
   padding: 20px;
   border-radius: 5px;
   border: 1px solid grey;
+  background-color: #d3edeb;
+  border-color: rgb(0, 112, 100);
 }
 .overview {
   margin-bottom: 15px;
 }
+.weather-temperature img {
+  margin-right: 6px;
+  height: 64px;
+  width: 70px;
+}
+.weather-temperature strong {
+  position: relative;
+  font-size: 48px;
+  font-weight: 400;
+  top: 12px;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -10px;
+}
+
 .weather-temperature.active {
   color: black;
   cursor: default;
@@ -30,6 +50,8 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
+}
+li:first-letter {
   text-transform: capitalize;
 }
 small {
