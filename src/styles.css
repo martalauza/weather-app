@@ -1,6 +1,6 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  background-color: #e4dee2;
+  background-color: #ede4ec;
 }
 .container {
   margin-top: 70px;
@@ -13,12 +13,9 @@ body {
   padding: 25px;
   border-radius: 5px;
   border: 1px solid grey;
-  background: rgb(238, 174, 202);
-  background: linear-gradient(
-    125deg,
-    rgba(238, 174, 202, 0.8696741854636592) 11%,
-    rgba(245, 76, 213, 0.368421052631579) 76%
-  );
+  background-color: #ffdee9;
+  background-image: linear-gradient(169deg, #ffdee9 0%, #b5fffc 100%);
+
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
 }
 .overview {
@@ -26,8 +23,7 @@ body {
 }
 
 .weather-icon img {
-  margin-top: -40px;
-  margin-left: -20px;
+  margin-right: 5px;
   height: 100px;
   width: 100px;
 }
@@ -37,48 +33,42 @@ body {
   top: -10px;
 }
 
-.parameters {
+.col-md-6 li {
+  top: 20px;
+  padding-right: 20px;
+  padding-left: 80px;
+  font-size: 18px;
   position: relative;
-  top: 25px;
-  right: 3px;
 }
 
 .weather-temperature strong {
   position: relative;
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 400;
   top: 9px;
 }
 .weather-temperature .units {
   position: relative;
-  font-size: 16px;
-  top: -10px;
+  font-size: 18px;
+  top: -9px;
 }
 
-.weather-temperature .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
 }
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 17px;
   opacity: 0.5;
 }
 .weather-forecast-temperature-min {
   opacity: 0.5;
 }
 .weather-forecast-temperatures {
-  font-size: 13px;
+  font-size: 15px;
 }
-.btn-primary,
+.btn-light,
 button {
   background-color: #aca7aa;
   color: white;
@@ -86,15 +76,17 @@ button {
   border-radius: 5px;
   border: 1px solid #757f7d;
 }
-.btn-primary:hover,
+.btn-light:hover,
 button:hover {
   background-color: #757f7d;
   border: none;
   cursor: pointer;
 }
 h1 {
-  color: black;
+  color: #878787;
   line-height: 28px;
+  font-size: 27px;
+  font-weight: bold;
 }
 ul {
   padding: 0;
@@ -107,16 +99,18 @@ li {
   height: 21px;
   line-height: 2;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 li:first-letter {
   text-transform: capitalize;
 }
 small {
-  font-size: 13px;
+  font-size: 14px;
   padding: 0;
   text-align: center;
 }
 a.author {
   text-decoration: none;
-  color: #e590cf;
+  color: #757f7d;
 }

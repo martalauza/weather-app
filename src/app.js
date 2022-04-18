@@ -43,7 +43,6 @@ function displayForecast(response) {
         `
      <div class="col-2">
        <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
-       ${index}
        <img
          src="http://openweathermap.org/img/wn/${
            forecastDay.weather[0].icon
@@ -87,6 +86,9 @@ function displayWeatherCondition(response) {
   descriptionElement.innerHTML = response.data.weather[0].description;
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  city.innerHTML = response.data.name + ", " + response.data.sys.country;
+  let feelsLikeElement = document.querySelector("#feelsLike");
+  feelsLikeElement.innerHTML = Math.round(response.data.main.feels_like);
   let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
